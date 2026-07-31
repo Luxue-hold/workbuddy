@@ -1,3 +1,10 @@
+const SUPABASE_URL = "https://ffsinokkkiubmiwebkpk.supabase.co";
+
+const SUPABASE_KEY = "sb_publishable_XIFW-sUj20crF7hW3dDFwg_4hK56TwA";
+
+const supabaseClient = supabase.createClient(
+  SUPABASE_URL,
+  SUPABASE_KEY
 /* ============================================================
    个人工作台 Workbench — 纯前端 / localStorage 持久化
    ============================================================ */
