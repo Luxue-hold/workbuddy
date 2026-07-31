@@ -250,3 +250,29 @@ textarea { resize: vertical; min-height: 70px; }
   font-family: "SF Mono", "Cascadia Code", "Consolas", monospace;
 }
 .timer-display.running { color: var(--danger); }
+ color: var(--primary-d); letter-spacing: 2px;
+  font-family: "SF Mono", "Cascadia Code", "Consolas", monospace;
+}
+.timer-display.running { color: var(--danger); }
+
+/* 睡眠记录 */
+.sleep-dur {
+  text-align: center; font-size: 18px; font-weight: 700;
+  color: var(--primary-d); padding: 12px 0 4px;
+}
+.sleep-chart {
+  display: flex; align-items: flex-end; justify-content: space-around;
+  height: 160px; gap: 8px; padding: 8px 0;
+}
+.sleep-bar, .sleep-bar.empty {
+  flex: 1; display: flex; flex-direction: column; align-items: center;
+  justify-content: flex-end; height: 100%; gap: 4px;
+}
+.sleep-bar-fill {
+  width: 32px; border-radius: 8px 8px 3px 3px;
+  background: linear-gradient(180deg, var(--primary), #a3b4ff);
+  min-height: 4px; transition: height .3s;
+}
+.sleep-bar-label { font-size: 11px; color: var(--text-faint); }
+.sleep-bar-val { font-size: 11px; font-weight: 600; color: var(--primary-d); }
+.sleep-bar.empty .sleep-bar-val { color: var(--text-faint); font-weight: 400; }
