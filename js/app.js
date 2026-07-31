@@ -1,10 +1,3 @@
-const SUPABASE_URL = "https://ffsinokkkiubmiwebkpk.supabase.co";
-
-const SUPABASE_KEY = "sb_publishable_XIFW-sUj20crF7hW3dDFwg_4hK56TwA";
-
-const supabaseClient = supabase.createClient(
-  SUPABASE_URL,
-  SUPABASE_KEY
 /* ============================================================
    个人工作台 Workbench — 纯前端 / localStorage 持久化
    ============================================================ */
@@ -31,7 +24,7 @@ const supabaseClient = supabase.createClient(
     { key: "sad", emoji: "😢", label: "低落" },
     { key: "angry", emoji: "😠", label: "烦躁" },
   ];
-  const FIN_CATS = ["餐饮", "交通", "购物", "居住", "娱乐", "医疗", "工资","宠物", "其他"];
+  const FIN_CATS = ["餐饮", "交通", "购物", "居住", "娱乐", "医疗", "工资", "其他"];
 
   /* ---------------- 数据层 ---------------- */
   let state = load();
